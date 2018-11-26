@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: feign-service
+server:
+  #  port: 8088
+  port: 8093
+
+ribbon:
+  eureka:
+    enabled: true
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
